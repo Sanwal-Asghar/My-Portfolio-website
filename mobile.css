@@ -3,7 +3,7 @@
 
     .nav-logo {
     font-size: 1rem;
-}
+} 
 
 nav {
     height: 7vh;
@@ -184,15 +184,22 @@ nav {
     font-size: 2vh;
 }
     /* page3 end.......................... */
+   
 
 .page4 .My-projects .underlined-p {
     right: 38%;
-    top: 3%;
+    top: 2.5%;
 }
 
+
+
 .p-box {
-    width: 42vh;
+    width: 100vh;
+    height: 72vh;
+    
 }
+
+
 
 .pr-skill-list{
     display: flex;
@@ -276,8 +283,10 @@ nav {
 
 .contact-box {
     margin-top: 10px;
+    margin-left: 2.5vh;
     width: 95%;
     min-height: 73vh;
+    
 }
 
 .name-gmail {
