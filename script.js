@@ -1,4 +1,47 @@
 
+// Hamburger js
+
+
+// let Check = 1
+
+// Hamburger.addEventListener("click", ()=>{   
+//         if(Check==1){
+//             MobileMenu.style.display = "block"  
+//             Check = 0
+//         }else{
+//            MobileMenu.style.display = "none" 
+//             Check = 1 
+//         }
+
+//         const menuLinks = MobileMenu.querySelectorAll('a');
+//         menuLinks.forEach(link => {
+//             link.addEventListener('click', () => {
+//                 MobileMenu.classList.add('hidden');
+//             });
+//         });  
+// })
+
+// Hamburger js
+
+let Hamburger = document.querySelector(".HamburgerBtn")
+let MobileMenu = document.querySelector(".mobile-menu") 
+
+
+ if (Hamburger && MobileMenu) {
+        Hamburger.addEventListener('click', () => {
+            // 'hidden' class ko toggle karega
+            MobileMenu.classList.toggle('hidden');
+        });
+        // Jab mobile menu ke kisi link par click ho to menu band ho jaye
+        const menuLinks = MobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                MobileMenu.classList.add('hidden');
+            });
+        });
+    }
+
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,7 +55,7 @@ const locoScroll = new LocomotiveScroll({
   smoothMobile: true, 
   smartphone: {
     smooth: true
-  },
+  }, 
   tablet: {
     smooth: true
   }
@@ -68,15 +111,13 @@ ScrollTrigger.refresh();
             y:50,
             opacity: 0,
             duration: 1,
-           scrollTrigger: {
+             scrollTrigger: {
                scroller: ".main",
                 trigger: ".page2",
                 start: "top 75%",
                  end: "top 40%",
-               
                 toggleActions: "play none none none",
                  scrub: 6,
-                 
             }
         });
   gsap.from( ".about-me h1,.about-me .underlined,.about-me p,.about-me .cv-btn,.about-me span", {
@@ -284,4 +325,30 @@ cursorAnimation();
 
         
 
-   
+//    // Nav links ke clicks ko handle krne ke liye
+// document.querySelectorAll("mobile-menu ul li a").forEach(anchor => {
+//     anchor.addEventListener("click", function(e) {
+//         e.preventDefault(); // Normal HTML jump ko rokne ke liye
+
+//         // Jis section pr jana hai uska id/class target nikalein (e.g., "#about")
+//         const targetElement = this.getAttribute("#home, #about, #skills, #projects, #contact");
+       
+//         // Locomotive ka apna custom scroll method
+//         locoScroll.scrollTo(targetElement);
+//     });
+// });
+
+// Nav links aur Mobile menu links dono ke liye smooth scroll
+document.querySelectorAll(".mobile-menu ul li a, .nav-part-2 ul li a").forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault(); // Default jump rokne ke liye
+
+        // Link ka href attribute nikalen (e.g., "#about", "#skills")
+        const targetElement = this.getAttribute("href");
+
+        // Agar target valid hai to Locomotive se scroll karwayen
+        if (targetElement && targetElement.startsWith("#")) {
+            locoScroll.scrollTo(targetElement);
+        }
+    });
+});

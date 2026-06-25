@@ -1,359 +1,369 @@
-
 @media (max-width:600px) {
 
     .nav-logo {
-    font-size: 1rem;
-} 
+        font-size: 1rem;
+    }
 
-nav {
-    height: 7vh;
-    padding: 0 20px;
-   
+    nav {
+        height: 7vh;
+        padding: 0 20px;
+
+    }
+
+    .HamburgerBtn i {
+        top: 2%;
+        right: 5%;
+        position: absolute;
+        z-index: 99;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color);
+
+    }
+
+    .nav-part-2 ul {
+        display: none;
+    }
+
+    .nav-part-3 {
+        display: none;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+
+.mobile-menu{
+    
+    
 }
 
-.nav-part-2 i{
-       display: block;
-       font-size: 1.5rem;
-       font-weight: 600;
-       color: var(--color);
-}
+    /* page1 ......................... */
+    .page1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
-.nav-part-2 ul{
-     display: none;
-}
+    .intro {
+        width: 100%;
+        margin: 0 6vh;
+        padding: 0 5vw;
+        letter-spacing: -0.1vh;
+    }
 
-.nav-part-3{
-    display: none;
-}
+    .intro h1 {
+        width: 75vw;
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 6vh;
+        margin-top: 10vh;
+    }
 
-.cursor {
-  display: none;
-}
+    .intro p {
+        font-weight: 600;
+        font-size: 2.2vh;
+        width: 100%;
+        margin-top: 3vh;
+        line-height: 3.2vh;
+        letter-spacing: 0.1vh;
+    }
 
+    .intro-pic {
+        margin-right: 5vh;
+        margin-top: 0vh;
+        height: 35vh;
+        width: 55vh;
+    }
 
-
-/* page1 ......................... */
-.page1 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.intro {
-    width: 100%;
-    margin: 0 6vh;
-    padding: 0 5vw;
-    letter-spacing: -0.1vh;
-}
-
-.intro h1 {
-    width: 75vw;
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 6vh;
-    margin-top: 10vh;
-}
-
-.intro p {
-    font-weight: 600;
-    font-size: 2.2vh;
-    width: 100%;
-    margin-top: 3vh;
-    line-height: 3.2vh;
-    letter-spacing: 0.1vh;
-}
-
-.intro-pic {
-    margin-right: 5vh;
-    margin-top: 0vh;
-    height: 35vh;
-    width: 55vh;
-}
-
-/* page1 ......................... */
+    /* page1 ......................... */
 
 
-.page2 {
+    .page2 {
 
-   flex-direction: column;
-   height: 190vh;
-    width: 100%;
-}
+        flex-direction: column;
+        height: 190vh;
+        width: 100%;
+    }
 
-.page2 .pag2-pic {
-    margin-top: 18vh;
-    margin-left: 0vh;
-    width: 45vh;
-    height: 55vh;
-    border-radius: 100px;
-}
+    .page2 .pag2-pic {
+        margin-top: 18vh;
+        margin-left: 0vh;
+        width: 45vh;
+        height: 55vh;
+        border-radius: 100px;
+    }
 
 
-.about-me {
-    margin-top: 2vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+    .about-me {
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
-.about-me h1 {
-    position: absolute;
-    top: 3%;
-    left: 33%;
-    margin-bottom: 2vh;
-    margin-right: 2vh;
-}
+    .about-me h1 {
+        position: absolute;
+        top: 3%;
+        left: 33%;
+        margin-bottom: 2vh;
+        margin-right: 2vh;
+    }
 
-.page2 .about-me .underlined {
-    position: absolute;
-    right: 39%;
-    top: 6%;
-    background-color: var(--color);
-    height: 3px;
-    width: 12vh;
-}
+    .page2 .about-me .underlined {
+        position: absolute;
+        right: 39%;
+        top: 6%;
+        background-color: var(--color);
+        height: 3px;
+        width: 12vh;
+    }
 
-.about-me .p {
-    margin-bottom: 2vh;
-    margin-right: 2vh;
-}
+    .about-me .p {
+        margin-bottom: 2vh;
+        margin-right: 2vh;
+    }
 
-.about-me p {
-    padding: 0 3vh;
-    margin-bottom: 2vh;
-    width: 50vh;
-    font-size: 2.2vh;
-    line-height: 3.5vh;
-}
+    .about-me p {
+        padding: 0 3vh;
+        margin-bottom: 2vh;
+        width: 50vh;
+        font-size: 2.2vh;
+        line-height: 3.5vh;
+    }
 
-.about-me .iconAnimation {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-left: 29vh;
-    margin-bottom: 2vh;
-}
+    .about-me .iconAnimation {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: 29vh;
+        margin-bottom: 2vh;
+    }
 
-.about-me .icon {
-    margin-bottom: 2vh;
-}
+    .about-me .icon {
+        margin-bottom: 2vh;
+    }
 
-.about-me .icon i {
-    color: var(--color);
-    font-size: 3vh;
-}
+    .about-me .icon i {
+        color: var(--color);
+        font-size: 3vh;
+    }
 
-.cv-btn {
-    width: 17vh;
-    margin-left: 78vh;
-    margin-bottom: 15vh;
-}
-/* page2 end.......................... */
+    .cv-btn {
+        width: 17vh;
+        margin-left: 78vh;
+        margin-bottom: 15vh;
+    }
 
-.page3 .My-skills .underlined-s {
-    right: 38%;
-    top: 8%;
-}
+    /* page2 end.......................... */
 
-.skill-box .box {
-    width: 20vh;
-}
+    .page3 .My-skills .underlined-s {
+        right: 38%;
+        top: 8%;
+    }
 
-.skill-box span {
-    width: 20vh;
-    text-align: center;
-}
+    .skill-box .box {
+        width: 20vh;
+    }
 
-.skill-box .grey-bar {
-    width: 15vh;
-}
+    .skill-box span {
+        width: 20vh;
+        text-align: center;
+    }
 
-.skill-box .box .a-p-l{
-     position: absolute;
-     bottom: 16%;
-}
+    .skill-box .grey-bar {
+        width: 15vh;
+    }
 
-.skill-box .clr-bar {
-    width: 10vh;
-    margin-top: 1.3vh;
-    margin-right: 7.5vh;
-}
+    .skill-box .box .a-p-l {
+        position: absolute;
+        bottom: 16%;
+    }
 
-.box .a-p {
-    font-size: 2vh;
-}
+    .skill-box .clr-bar {
+        width: 10vh;
+        margin-top: 1.3vh;
+        margin-right: 7.5vh;
+    }
+
+    .box .a-p {
+        font-size: 2vh;
+    }
+
     /* page3 end.......................... */
-   
-
-.page4 .My-projects .underlined-p {
-    right: 38%;
-    top: 2.5%;
-}
 
 
-
-.p-box {
-    width: 100vh;
-    height: 72vh;
-    
-}
+    .page4 .My-projects .underlined-p {
+        right: 38%;
+        top: 2.5%;
+    }
 
 
 
-.pr-skill-list{
-    display: flex;
-    justify-content: space-between;
-}
+    .p-box {
+        width: 100vh;
+        height: 72vh;
 
-.project-content .pr-bottom {
-    width: 38vh;
-}
-
-   /* page4 end.......................... */
-
-.page5 {
-    width: 100%;
-    height: 95vh;
-    position: relative;
-}
-
-.page5 .underlined-c {
-    right: 38%;
-    top: 10%;
-}
-
-.client-reviews {
-   flex-direction: column;
-}
-
-.R-box {
-    margin-top: 30px;
-    width: 45vh;
-    height: 37vh;
-}
+    }
 
 
- /* page5 end.......................... */
 
-.page6 {
-    min-height: 160vh;
-}
+    .pr-skill-list {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.page6 .underlined-ct {
-    right: 38%;
-    top: 6.5%;
-}
+    .project-content .pr-bottom {
+        width: 38vh;
+    }
 
-.page6-container {
-    flex-direction: column;
-}
+    /* page4 end.......................... */
 
-.info .info-box-1 {
-    width: 45vh;
-    margin-top: 3.5vh;
-    margin-left: 6.2vh;
-}
+    .page5 {
+        width: 100%;
+        height: 95vh;
+        position: relative;
+    }
 
-.info .info-box-2 {
-    width: 45vh;
-    margin-left: 6.2vh;
-}
+    .page5 .underlined-c {
+        right: 38%;
+        top: 10%;
+    }
 
-.info .info-box-3 {
-    width: 45vh;
-    margin-left: 6.2vh;
-}
+    .client-reviews {
+        flex-direction: column;
+    }
 
-
-.info-box-text i {
-    margin-left: 1vh;
-}
-
-.info-box-text .text-cover {
-    width: 35vh;
-    margin-right: 12vh;
-}
-
-.info .page6-icons {
-    margin-left: 12vh;
-}
-
-/*Contact Css ..................................Contact Css */
-
-.contact-box {
-    margin-top: 10px;
-    margin-left: 2.5vh;
-    width: 95%;
-    min-height: 73vh;
-    
-}
-
-.name-gmail {
-    flex-direction: column;
-}
+    .R-box {
+        margin-top: 30px;
+        width: 45vh;
+        height: 37vh;
+    }
 
 
-.form-name input {
-    width:38vh;
-}
+    /* page5 end.......................... */
 
-.form-gmail {
-    margin-top: 3vh;
-    margin-left: 0vh;
-}
+    .page6 {
+        min-height: 160vh;
+    }
 
-.form-gmail input {
-    width: 38vh;
-}
+    .page6 .underlined-ct {
+        right: 38%;
+        top: 6.5%;
+    }
 
-.form-subject {
-    margin-top: 3vh;
-}
+    .page6-container {
+        flex-direction: column;
+    }
 
-.form-subject input {
-    width: 38vh;
-}
+    .info .info-box-1 {
+        width: 45vh;
+        margin-top: 3.5vh;
+        margin-left: 6.2vh;
+    }
 
-.form-message {
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-}
+    .info .info-box-2 {
+        width: 45vh;
+        margin-left: 6.2vh;
+    }
 
-.form-message textarea {
-    width: 38vh;
-}
+    .info .info-box-3 {
+        width: 45vh;
+        margin-left: 6.2vh;
+    }
 
-.form-sms {
-    padding: 2vh 12.7vh;
-}
 
-/* Footer ........................................ Footer*/
+    .info-box-text i {
+        margin-left: 1vh;
+    }
 
-footer{
-  height: 40vh;
-}
+    .info-box-text .text-cover {
+        width: 35vh;
+        margin-right: 12vh;
+    }
 
-.footer-cover{
-    width: 100%;
-      flex-direction: column;
-}
+    .info .page6-icons {
+        margin-left: 12vh;
+    }
 
-.f-part-1 {
-     margin-top: 0vh;
-     margin-bottom: 5vh;
-}
+    /*Contact Css ..................................Contact Css */
 
-.f-part-1 h1 {
-    margin-top: 3vh;
-}
+    .contact-box {
+        margin-top: 10px;
+        margin-left: 2.5vh;
+        width: 95%;
+        min-height: 73vh;
 
-.b-line {
-    width: 120%;
-    height: 0.1px;
-    background-color: #7c7c7c;
-}
+    }
+
+    .name-gmail {
+        flex-direction: column;
+    }
+
+
+    .form-name input {
+        width: 38vh;
+    }
+
+    .form-gmail {
+        margin-top: 3vh;
+        margin-left: 0vh;
+    }
+
+    .form-gmail input {
+        width: 38vh;
+    }
+
+    .form-subject {
+        margin-top: 3vh;
+    }
+
+    .form-subject input {
+        width: 38vh;
+    }
+
+    .form-message {
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-message textarea {
+        width: 38vh;
+    }
+
+    .form-sms {
+        padding: 2vh 12.7vh;
+    }
+
+    /* Footer ........................................ Footer*/
+
+    footer {
+        height: 40vh;
+    }
+
+    .footer-cover {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .f-part-1 {
+        margin-top: 0vh;
+        margin-bottom: 5vh;
+    }
+
+    .f-part-1 h1 {
+        margin-top: 3vh;
+    }
+
+    .b-line {
+        width: 120%;
+        height: 0.1px;
+        background-color: #7c7c7c;
+    }
 
 
 }
