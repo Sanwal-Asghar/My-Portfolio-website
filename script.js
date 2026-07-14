@@ -26,7 +26,7 @@
 let Hamburger = document.querySelector(".HamburgerBtn")
 let MobileMenu = document.querySelector(".mobile-menu") 
 
-
+ 
  if (Hamburger && MobileMenu) {
         Hamburger.addEventListener('click', () => {
             // 'hidden' class ko toggle karega
